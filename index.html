@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://33.media.tumblr.com/avatar_3727c97fcefa_128.png">
+
+    <title>Slack Fake</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="./assets/css/application.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a id="page-title" class="navbar-brand" href="#">Slack Fake</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <form class="fake-form">
+        <div class="form-group">
+          <label for="IncomingWebhookURL">Incoming Webhook URL</label>
+          <input class="form-control" id="IncomingWebhookURL" placeholder="Incoming Webhook URL">
+        </div>
+        <div class="form-group">
+          <label for="SlackChannelGroup">Channel/Group Name</label>
+          <input class="form-control" id="SlackChannelGroup" placeholder="Slack Channel Group">
+        </div>
+        <div class="form-group">
+          <label for="FakeName">Fake Name</label>
+          <input class="form-control" id="FakeName" placeholder="Fake Name">
+        </div>
+        <div class="form-group">
+          <label for="FakeEmoticon">Fake Emoticon</label>
+          <input class="form-control" id="FakeEmoticon" placeholder="Fake Emoticon">
+        </div>
+        <div class="form-group">
+          <label for="FakeMessage">Fake Message</label>
+          <textarea class="form-control" id="FakeMessage" placeholder="Fake Message"></textarea>
+        </div>
+        <button type="button" id="FakeSubmitionButton" class="btn btn-primary pull-right">Fake</button>
+      </form>
+    </div><!-- /.container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Successful fake message!</h4>
+          </div>
+          <div class="modal-body">
+            Your message has been sent successfully!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/fake_messages.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
